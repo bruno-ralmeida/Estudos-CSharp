@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace _07_ByteBank
 {
@@ -12,10 +9,10 @@ namespace _07_ByteBank
         {
             ContaCorrente c1 = new ContaCorrente(1234, 4555);
 
-            Console.WriteLine(ContaCorrente.TotalContasCriadas);
+            Console.WriteLine($"Contas Criadas: {ContaCorrente.TotalContasCriadas}");
 
-            Console.WriteLine();
-            Console.ReadLine();
+            
+            Console.ReadKey();
         }
     }
 }

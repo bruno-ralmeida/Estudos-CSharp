@@ -16,7 +16,7 @@ namespace _01_ByteBank
             contaDaGabriela.agencia = 863;
             contaDaGabriela.numero = 863452;
             contaDaGabriela.saldo = 100;
-
+            
             Console.WriteLine(contaDaGabriela.titular);
             Console.WriteLine("Agência: " + contaDaGabriela.agencia);
             Console.WriteLine("Número: " + contaDaGabriela.numero);

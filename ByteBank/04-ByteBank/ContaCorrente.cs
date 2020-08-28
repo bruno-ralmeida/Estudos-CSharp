@@ -10,13 +10,13 @@ public class ContaCorrente
 
     public bool Sacar(double valor)
     {
-        if(this.saldo < valor)
+
+        if (this.saldo >= valor)
         {
-            return false;
+            this.saldo -= valor;
+            return true;
         }
-        
-        this.saldo -= valor;
-        return true;
+        return false;
     }
 
     public void Depositar(double valor)
