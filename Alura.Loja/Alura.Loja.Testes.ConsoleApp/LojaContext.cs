@@ -5,8 +5,13 @@ namespace Alura.Loja.Testes.ConsoleApp
 {
     internal class LojaContext : DbContext
     {
-        //Definimos quais tabelas
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Compra> Compras { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
